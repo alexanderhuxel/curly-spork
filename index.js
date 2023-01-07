@@ -30,10 +30,12 @@ function getBackendData(parameter) {
                     break;
             }
             
-        } else{
-            document.getElementById(parameter).innerHTML = 'Ein Fehler ist aufgetreten.';
         }
     };
+
+    xhr.onerror = function(){
+        document.getElementById(parameter).innerHTML = 'Ein Fehler ist aufgetreten.';
+    }
 
     xhr.send();
 }
