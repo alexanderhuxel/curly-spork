@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz Buzz</title>
+    <script src="index.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex justify-center items-center h-screen flex-col bg-gray-200">
+
+   <div class="flex flex-col bg-gray-100 rounded py-10 px-5 mb-4 container">
+        <h2>
+        Liste
+        </h2>
+
+        <div class="flex gap-x-2">
+            <input type="number" name="number" id="number" value="2" min="1">
+        <button onclick="getBackendData('list')" class="bg-black p-1 text-white w-max rounded">Liste erstellen</button>
+        </div>
+        <p id="list"></p>
+   </div>
+
+   <div class="flex flex-col bg-gray-100 rounded py-10 px-5 container">
+        <h2>
+            Items
+        </h2>
+        <span>
+        <button id="nextNumber" class="bg-black p-1 text-white rounded" onclick="getBackendData('item')">Zahl hinzufügen</button>
+        <p id="item"></p>
+        </span>
+    </div>
+
+
+</body>
+</html>
